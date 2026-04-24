@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-cream text-espresso font-sans; overflow-x: hidden; }
+  h1, h2, h3, h4 { @apply font-display; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-forest-700 text-cream px-7 py-3.5 rounded-full font-sans font-medium
+           hover:bg-forest-800 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5
+           inline-flex items-center gap-2 text-sm tracking-wide;
+  }
+  .btn-outline {
+    @apply border border-espresso/30 text-espresso px-7 py-3.5 rounded-full font-sans font-medium
+           hover:bg-espresso hover:text-cream transition-all duration-300 inline-flex items-center gap-2 text-sm;
+  }
+  .btn-outline-light {
+    @apply border border-cream/50 text-cream px-7 py-3.5 rounded-full font-sans font-medium
+           hover:bg-cream hover:text-espresso transition-all duration-300 inline-flex items-center gap-2 text-sm;
+  }
+  .btn-gold {
+    @apply bg-gold text-espresso px-7 py-3.5 rounded-full font-sans font-semibold
+           hover:bg-sand-300 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5
+           inline-flex items-center gap-2 text-sm;
+  }
+  .section-eyebrow {
+    @apply font-sans text-[11px] tracking-[0.35em] uppercase text-gold font-medium;
+  }
+  .page-hero {
+    @apply relative h-64 md:h-80 overflow-hidden;
+  }
+}
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Photo lightbox */
+.lightbox-open { overflow: hidden; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #faf6ef; }
+::-webkit-scrollbar-thumb { background: #2d6e2d; border-radius: 3px; }
+::selection { background: #c9a84c40; color: #2c1810; }
+
+/* Page transitions */
+.page-enter { animation: pageFadeIn 0.5s ease forwards; }
+@keyframes pageFadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
