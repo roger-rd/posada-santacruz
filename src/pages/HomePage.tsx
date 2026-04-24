@@ -267,7 +267,7 @@ export default function HomePage() {
 
       {/* ── CTA FINAL ── */}
       <section className="relative py-24 overflow-hidden">
-        <img src="/public/img/cta_final/montaña-te-espera.jpeg" alt="Vista nocturna" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/src/assets/img/cta_final/montaña-te-espera.jpeg" alt="Vista nocturna" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-espresso/75" />
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center reveal">
           <p className="section-eyebrow text-gold/80 mb-4">¿Listo para escapar?</p>
