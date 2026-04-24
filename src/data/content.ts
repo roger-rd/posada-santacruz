@@ -18,10 +18,10 @@ export const CONTACT = {
 }
 
 export const HERO_SLIDES = [
-  { image: '/src/assets/img/hero_slides/estancia-altos-de-vera.jpg', label: 'Vista Panorámica' },
-  { image: '/src/assets/img/hero_slides/estancia-altos-de-vera1.jpg', label: 'Hospedaje' },
-  { image: '/src/assets/img/hero_slides/posada-altos-2.webp', label: 'Café & Naturaleza' },
-  { image: '/src/assets/img/hero_slides/veracruz.webp', label: 'Bosques de Sanare' },
+  { image: '/img/hero_slides/estancia-altos-de-vera.jpg', label: 'Vista Panorámica' },
+  { image: '/img/hero_slides/estancia-altos-de-vera1.jpg', label: 'Hospedaje' },
+  { image: '/img/hero_slides/posada-altos-2.webp', label: 'Café & Naturaleza' },
+  { image: '/img/hero_slides/veracruz.webp', label: 'Bosques de Sanare' },
 ]
 
 export const ROOMS = [
@@ -228,7 +228,7 @@ export const PROMOTIONS = [
     priceNote: '2 personas / noche',
     features: ['Habitación matrimonial', 'Cena romántica privada', 'Desayuno en terraza', 'Decoración y velas', 'Descorche incluido', 'Bata y pantuflas'],
     badge: '❤️ Más popular',
-    image: '/src/assets/img/promotions/img-romanticajpg.jpg',
+    image: '/img/promotions/img-romanticajpg.jpg',
     whatsappMsg: 'Hola! Me interesa el paquete Escapada Romántica. ¿Hay disponibilidad?',
   },
   {
@@ -241,7 +241,7 @@ export const PROMOTIONS = [
     priceNote: 'familia de 4 / 2 noches',
     features: ['Habitación familiar completa', 'Minigolf incluido', 'Fogata + malvaviscos', 'Cine bajo estrellas', 'Desayuno buffet', 'Actividades niños'],
     badge: '👨‍👩‍👧‍👦 Perfecto para niños',
-    image: '/src/assets/img/promotions/img-familiar.jpg',
+    image: '/img/promotions/img-familiar.jpg',
     whatsappMsg: 'Hola! Me interesa el paquete Familiar. ¿Hay disponibilidad?',
   },
   {
